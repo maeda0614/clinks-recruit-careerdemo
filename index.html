@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CLINKS 中途経験者採用</title>
+  <meta name="description" content="CLINKS株式会社 中途経験者採用サイトのサンプル実装です。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header" id="header">
+    <a href="#" class="brand" aria-label="CLINKS HOME">
+      <img src="assets/logo.png" alt="CLINKS AI DRIVEN COMPANY">
+      <span>中途経験者採用</span>
+    </a>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <a href="#company">会社を知る</a>
+      <a href="#work">仕事を知る</a>
+      <a href="#environment">働く環境を知る</a>
+      <a href="#people">社員を知る</a>
+      <a href="#process">選考プロセス</a>
+      <a href="#faq">FAQ</a>
+      <a href="#jobs" class="nav-button">募集職種一覧</a>
+    </nav>
+    <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="drawer" aria-hidden="true">
+    <div class="drawer-inner">
+      <a href="#company">会社を知る <span>→</span></a>
+      <a href="#work">仕事を知る <span>→</span></a>
+      <a href="#environment">働く環境を知る <span>→</span></a>
+      <a href="#people">社員を知る <span>→</span></a>
+      <a href="#process">選考プロセス <span>→</span></a>
+      <a href="#faq">FAQ <span>→</span></a>
+      <a href="#jobs" class="drawer-button">募集職種一覧</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>エンジニアが、<br><span>主役</span>になれる場所へ。</h1>
+        <p class="lead">AI・クラウド・インフラ・アプリ開発まで。<br>幅広い技術領域で、“自分の強み”を伸ばせる環境があります。</p>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/fv-people.png" alt="エンジニア採用イメージ">
+      </div>
+      <div class="scroll-cue"><span></span></div>
+    </section>
+
+    <section class="jobs-section" id="jobs">
+      <div class="section-inner">
+        <div class="job-search reveal">
+          <h2>募集職種を探す</h2>
+          <form class="search-box">
+            <select aria-label="職種を選択する">
+              <option>職種を選択する</option>
+              <option>AIエンジニア</option>
+              <option>クラウドエンジニア</option>
+              <option>アプリエンジニア</option>
+            </select>
+            <button type="button">募集職種を探す</button>
+          </form>
+        </div>
+        <p class="pickup-title reveal">ピックアップ求人</p>
+        <div class="job-grid">
+          <a href="#" class="job-card reveal"><span>NEW</span><h3>AIエンジニア</h3><p>正社員：450〜800万円</p><small>東京・リモート可<br>Python / Azure OpenAI など</small><i>→</i></a>
+          <a href="#" class="job-card reveal"><span>NEW</span><h3>AIエンジニア</h3><p>正社員：450〜800万円</p><small>東京・リモート可<br>Python / Azure OpenAI など</small><i>→</i></a>
+          <a href="#" class="job-card reveal"><span>NEW</span><h3>AIエンジニア</h3><p>正社員：450〜800万円</p><small>東京・リモート可<br>Python / Azure OpenAI など</small><i>→</i></a>
+          <a href="#" class="job-card reveal"><span>NEW</span><h3>AIエンジニア</h3><p>正社員：450〜800万円</p><small>東京・リモート可<br>Python / Azure OpenAI など</small><i>→</i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="links-section section-inner">
+      <div class="link-grid">
+        <a href="#company" class="feature-card reveal" id="company"><img src="assets/company.png" alt="会社受付"><div><h2>会社を知る</h2><p>会社概要や事業内容</p></div><span>→</span></a>
+        <a href="#work" class="feature-card reveal" id="work"><img src="assets/office.jpg" alt="仕事風景"><div><h2>仕事を知る</h2><p>開発・プロジェクト・案件例</p></div><span>→</span></a>
+        <a href="#environment" class="feature-card reveal" id="environment"><img src="assets/pantry1.jpg" alt="オフィス環境"><div><h2>働く環境を知る</h2><p>福利厚生・オフィス環境</p></div><span>→</span></a>
+        <a href="#people" class="feature-card reveal" id="people"><img src="assets/pantry2.jpg" alt="社員が集うスペース"><div><h2>社員を知る</h2><p>社員インタビュー</p></div><span>→</span></a>
+      </div>
+    </section>
+
+    <section class="faq section-inner" id="faq">
+      <h2 class="reveal">よくある質問（FAQ）</h2>
+      <div class="accordion reveal">
+        <button class="faq-q">Q. リモート勤務は可能ですか？<svg class="faq-icon" width="16" height="10" viewBox="0 0 16 10" aria-hidden="true"><path d="M1.5 1.5L8 8L14.5 1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><p>案件やポジションによって異なりますが、リモート対応案件も多数あります。</p></div>
+        <button class="faq-q">Q. 再応募はできますか？<svg class="faq-icon" width="16" height="10" viewBox="0 0 16 10" aria-hidden="true"><path d="M1.5 1.5L8 8L14.5 1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-a"><p>可能です。ご経験やスキルの更新状況を踏まえて選考いたします。</p></div>
+        <button class="faq-q">Q. 上流工程に挑戦できますか？<svg class="faq-icon" width="16" height="10" viewBox="0 0 16 10" aria-hidden="true"><path d="M1.5 1.5L8 8L14.5 1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-a"><p>ご経験や希望に応じて、要件定義・設計など上流工程へ挑戦できる案件もあります。</p></div>
+        <button class="faq-q">Q. 技術選定に関われますか？<svg class="faq-icon" width="16" height="10" viewBox="0 0 16 10" aria-hidden="true"><path d="M1.5 1.5L8 8L14.5 1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-a"><p>プロジェクトにより、技術選定や改善提案に関わる機会があります。</p></div>
+        <button class="faq-q">Q. 地方での勤務は可能ですか？<svg class="faq-icon" width="16" height="10" viewBox="0 0 16 10" aria-hidden="true"><path d="M1.5 1.5L8 8L14.5 1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-a"><p>案件状況により相談可能です。まずはお問い合わせください。</p></div>
+      </div>
+    </section>
+
+    <section class="contact-cta" id="process">
+      <div class="reveal">
+        <h2>採用について、お気軽にご相談ください。</h2>
+        <p>選考や雰囲気など不明な点があれば、いつでもお問い合わせフォームよりご連絡ください。</p>
+        <a href="#" class="primary-button">お問い合わせする <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="entry-cta">
+      <div class="reveal">
+        <h2>あなたの次のキャリアを、<br class="sp">一緒につくる。</h2>
+        <p>CLINKSは、「もっと技術を伸ばしたい」「経験から現場で働きたい」<br>そんな想いを持つ方を歓迎しています。</p>
+        <a href="#jobs" class="white-button">募集職種一覧 <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><img src="assets/logo.png" alt="CLINKS"><div class="sns"><a href="#">f</a><a href="#">◎</a><a href="#">𝕏</a><a href="#">♪</a></div></div>
+      <nav class="footer-nav"><a href="#company">会社を知る</a><a href="#work">仕事を知る</a><a href="#environment">働く環境を知る</a><a href="#people">人を知る</a><a href="#process">選考プロセス</a><a href="#faq">FAQ</a></nav>
+    </div>
+    <div class="footer-links"><a href="#">お問い合わせ</a><a href="https://www.clinks.jp/" target="_blank" rel="noopener noreferrer" class="external-link">コーポレートサイト <svg class="external-link-icon" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4H20V10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L20 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 14V20H4V4H10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="#">採用情報TOP</a><a href="#">新卒採用サイト</a><a href="#">中途未経験者採用サイト</a></div>
+    <p class="copyright">Copyright© CLINKS Inc. All Rights Reserved.</p>
+  </footer>
+  <a href="#header" class="back-to-top" aria-label="トップに戻る">↑</a>
+  <script src="assets/script.js"></script>
+</body>
+</html>
